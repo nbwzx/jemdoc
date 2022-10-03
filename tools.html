@@ -1,0 +1,157 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Zixing Wang</title>
+    <!-- MathJax -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+    <!-- End MathJax -->
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-icon-text-container">
+                    <div id="header-icon-container">
+                        <a href="/"><img src="./images/profile2.png" alt=""
+                                style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+                    </div>
+                    <div id="header-text-container">
+                        <a href="/">Zixing Wang</a>
+                    </div>
+                </div>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div id="layout">
+            <div id="layout-menu-container">
+                <div id="layout-menu">
+                    <div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    </div>
+                    <div class="menu-item"><a href="/">About</a></div>
+                    <div class="menu-category">Academic</div>
+                    <div class="menu-item"><a href="profile.html">Profile Page</a></div>
+                    <div class="menu-item"><a href="projects.html">Project Page</a></div>
+                    <div class="menu-item"><a href="./files/CV.pdf" target="blank">CV Page</a></div>
+                    <div class="menu-category">Github</div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/Customized-Poker" target="blank">Customized
+                            Poker</a></div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/Latex-Template" target="blank">Latex
+                            Template</a></div>
+                    <div class="menu-category">Rubik's cube</div>
+                    <div class="menu-item"><a href="commutator" target="blank">Commutator</a></div>
+                    <div class="menu-item"><a href="https://blddb.net" target="blank">Blddb</a></div>
+                    <div class="menu-item"><a href="nightmare" target="blank">Nightmare</a></div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/CubeSudoku" target="blank">Cube Sudoku</a>
+                    </div>
+                    <div class="menu-category">Goodies</div>
+                    <div class="menu-item"><a href="inequality.html">An Inequality</a></div>
+                    <div class="menu-item"><a href="tools.html" class="current">Tools Page</a></div>
+                </div>
+            </div>
+            <div id="layout-content-container">
+                <div id="layout-content">
+                    <div id="toptitle">
+                        <h1>Useful Tools</h1>
+                    </div>
+                    <p>
+                        <ul>
+                            <h3> Tools for writing papers</h3>
+                            <li>
+                                <b><a href="https://mathpix.com/" target="_blank"> Mathpix</a> </b> for converting
+                                formulas
+                                from picture form to Tex form.
+                                <br /><br />
+                            </li>
+                            <li>
+                                <b><a href="http://www.tikzedt.org/" target="_blank"> TikzEdt</a> </b> for drawing with
+                                Tex.
+                                <br /><br />
+                            </li>
+                            <h3> Tools for solving mathematical problems</h3>
+                            <li>
+                                <b><a href="https://www.maplesoft.com/products/Maple/" target="_blank"> Maple</a> </b>
+                                for solving algebraic problems in computer.
+                                <br /><br />
+                            </li>
+                            <li>
+                                <b><a href="https://www.wolframalpha.com/" target="_blank"> WolframAlpha</a> </b> for
+                                computing mathematical problems intelligently.
+                                <br /><br />
+                            </li>
+                            <h3> Tools for doing research</h3>
+                            <li>
+                                <b><a href="https://arxiv.org/" target="_blank"> ArXiv</a> </b> for reading and
+                                publishing
+                                preprints.
+                                <br /><br />
+                            </li>
+                            <li>
+                                <b><a href="https://stackexchange.com/" target="_blank"> StackExchange</a> </b> for
+                                exchanging hot issues.
+                                <br /><br />
+                            </li>
+                            <h3> Tools for taking notes</h3>
+                            <li>
+                                <b><a href="https://notability.com/" target="_blank"> Notability</a> </b> for taking
+                                notes
+                                on pads.
+                                <br /><br />
+                            </li>
+                        </ul>
+                    </p>
+                </div>
+                <div id="footer-container">
+                    <div id="footer">
+                        <div id="footer-text">
+                            Last edited on June 19<sup>th</sup> 2022.<br />
+                            © Zixing Wang 2022. All rights reserved.<br />
+                            Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new
+                                design</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            if (window.innerWidth <= 1200) {
+                document.getElementById("layout-menu").style.width = "280px";
+                document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+                document.getElementById("layout-content-container").style.position = "fixed";
+            }
+        }
+
+        function closeNav() {
+            if (window.innerWidth <= 1200) {
+                document.getElementById("layout-menu").style.width = "0";
+                document.getElementById("layout-content-container").style.position = "static";
+                document.getElementById("layout-content-container").style.marginLeft = "0px";
+                setInterval(
+                    function () {
+                        location.reload()
+                    },
+                    500
+                );
+            }
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="generator" content="jemdoc, see http://jemdoc.jaboc.net/" />
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+    <link rel="icon" href="./images/icon.png">
+    <link rel="stylesheet" href="main.css" type="text/css" />
+    <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+    <title>Zixing Wang</title>
+    <!-- MathJax -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/latest.js?config=TeX-MML-AM_CHTML' async>
+    </script>
+    <script type="text/x-mathjax-config">
+        MathJax.Hub.Config({
+	  TeX: { equationNumbers: { autoNumber: "AMS" } }
+});
+</script>
+    <!-- End MathJax -->
+</head>
+
+<body>
+    <div id="main-container">
+        <div id="header-container">
+            <div id="header">
+                <div id="header-icon-text-container">
+                    <div id="header-icon-container">
+                        <a href="/"><img src="./images/profile2.png" alt=""
+                                style="width: 100%; height: 100%; position: center; padding:0px; margin: 0px;"></a>
+                    </div>
+                    <div id="header-text-container">
+                        <a href="/">Zixing Wang</a>
+                    </div>
+                </div>
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">☰</button>
+                </div>
+            </div>
+        </div>
+        <div id="layout">
+            <div id="layout-menu-container">
+                <div id="layout-menu">
+                    <div class="menu-item"><a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                    </div>
+                    <div class="menu-item"><a href="/">About</a></div>
+                    <div class="menu-category">Academic</div>
+                    <div class="menu-item"><a href="profile.html">Profile Page</a></div>
+                    <div class="menu-item"><a href="projects.html">Project Page</a></div>
+                    <div class="menu-item"><a href="./files/CV.pdf" target="blank">CV Page</a></div>
+                    <div class="menu-category">Github</div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/Customized-Poker" target="blank">Customized
+                            Poker</a></div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/Latex-Template" target="blank">Latex
+                            Template</a></div>
+                    <div class="menu-category">Rubik's cube</div>
+                    <div class="menu-item"><a href="commutator" target="blank">Commutator</a></div>
+                    <div class="menu-item"><a href="https://blddb.net" target="blank">Blddb</a></div>
+                    <div class="menu-item"><a href="nightmare" target="blank">Nightmare</a></div>
+                    <div class="menu-item"><a href="https://github.com/nbwzx/CubeSudoku" target="blank">Cube Sudoku</a>
+                    </div>
+                    <div class="menu-category">Goodies</div>
+                    <div class="menu-item"><a href="inequality.html" class="current">An Inequality</a></div>
+                    <div class="menu-item"><a href="tools.html">Tools Page</a></div>
+                </div>
+            </div>
+            <div id="layout-content-container">
+                <div id="layout-content">
+                    <div id="toptitle">
+                        <h1>An inequality</h1>
+                    </div>
+                    <div id="warning" class="infoblock">
+                        <div class="blockcontent">
+                            <p>Latex equation support relies on several pieces, any of which may break. No
+                                guarantees! Support may be limited. You may have a better experience on laptop.</p>
+                        </div>
+                    </div>
+                    <h2>Problem</h2>
+                    <p>If \(x_{1}, x_{2} \geq 0,\left\{\begin{array}{l}m \geq n \geq 0 \\ s \geq t \geq 0 \\ m+n
+                        \geq s+t \\ n \geq t\end{array}\right.\), then
+                        \(
+                        \displaystyle\left(\frac{x_{1}^{m}+x_{2}^{m}}{x_{1}^{n}+x_{2}^{n}}\right)^{\frac{1}{m-n}}
+                        \geq\left(\frac{x_{1}^{s}+x_{2}^{s}}{x_{1}^{t}+x_{2}^{t}}\right)^{\frac{1}{s-t}}
+                        \)
+                    </p>
+                    <h2>Proof</h2>
+                    <p>
+                        After taking the logarithm of both sides, the original inequality becomes
+                        \[
+                        \frac{\ln \left(x_{1}^{m}+x_{2}^{m}\right)-\ln \left(x_{1}^{n}+x_{2}^{n}\right)}{m-n} \geq
+                        \frac{\ln \left(x_{1}^{s}+x_{2}^{s}\right)-\ln \left(x_{1}^{t}+x_{2}^{t}\right)}{s-t}
+                        \]
+
+                        First, let us calculate the 1,2,3 derivatives of
+                        \(\varphi(r)=\ln \left(x_{1}^{r}+x_{2}^{r}\right)\)
+                    </p>
+                    <p>
+                        Setting \(\alpha=x_{1}^{r}+x_{2}^{r}, \beta=x_{1}^{r} \ln x_{1}+x_{2}^{r} \ln x_{2},
+                        \gamma=x_{1}^{r}\left(\ln x_{1}\right)^{2}+x_{2}^{r}\left(\ln x_{2}\right)^{2},
+                        \theta=x_{1}^{r}\left(\ln x_{1}\right)^{3}+x_{2}^{r}\left(\ln x_{2}\right)^{3}\)
+                    </p>
+                    <p>
+                        we have \(\displaystyle \varphi^{\prime}(r)=\frac{\beta}{\alpha}\),
+                        \(\displaystyle \varphi^{\prime \prime}(r)=\frac{\alpha \gamma-\beta^{2}}{\alpha^{2}}\),
+                        \(\displaystyle \varphi^{\prime \prime \prime}(r)=\frac{\alpha^{2}(\alpha \theta-\beta
+                        \gamma)-\left(\alpha \gamma-\beta^{2}\right) 2 \alpha \beta}{\alpha^{4}}=\frac{\alpha^{2}
+                        \theta-3 \alpha \beta \gamma+2 \beta^{3}}{\alpha^{3}}\)
+                    </p>
+                    <p>
+                        Setting \(y_{1}=x_{1}^{r}, y_{2}=x_{2}^{r}, z_{1}=\ln x_{1}, z_{2}=\ln x_{2}\)
+                    </p>
+                    <p>
+                        then \(\alpha^{2} \theta-3 \alpha \beta \gamma+2 \beta^{3}\)
+                    </p>
+                    <p>
+                        \(=\left(y_{1}+y_{2}\right)^{2}\left(y_{1} z_{1}^{3}+y_{2}
+                        z_{2}^{3}\right)-3\left(y_{1}+y_{2}\right)\left(y_{1} z_{1}+y_{2} z_{2}\right)\left(y_{1}
+                        z_{1}^{2}+y_{2} z_{2}^{2}\right)+2\left(y_{1} z_{1}+y_{2} z_{2}\right)^{3}\)
+                    </p>
+                    <p>
+                        \(=y_{1} y_{2}\left(y_{2}-y_{1}\right)\left(z_{1}-z_{2}\right)^{3}\)
+                    </p>
+                    <p>
+                        since \(y_{1} \leq y_{2} \Longleftrightarrow x_{1} \leq x_{2} \Leftrightarrow z_{1} \leq
+                        z_{2}\)
+                    </p>
+                    <p>
+                        \(y_{1} \geq y_{2} \Longleftrightarrow x_{1} \geq x_{2} \Leftrightarrow z_{1} \geq z_{2}\)
+                    </p>
+                    <p>
+                        so \(\left(y_{2}-y_{1}\right)\) \(\left(z_{1}-z_{2}\right)^{3} < 0 \) </p> <p>
+                            so \(\alpha^{2} \theta-3 \alpha \beta \gamma+2 \beta^{3} < 0\) </p> <p>
+                                we have \(\varphi^{\prime \prime \prime}(r) \leq 0\)
+                    </p>
+                    <p>
+                        Returning to our original problem.
+                    </p>
+                    <p>
+                        By Hölder's inequality, we have
+                        \(\displaystyle\left(x_{1}^{r}+x_{2}^{r}\right)^{\frac{s-t}{r-t}}\left(x_{1}^{t}+x_{2}^{t}\right)^{\frac{r-s}{r-t}}
+                        \geq x_{1}^{s}+x_{2}^{s}\) &nbsp;&nbsp; (here \(\left.r \geq s \geq t\right)\)
+                    </p>
+                    <p>
+                        we have
+                        \(\displaystyle\left(\frac{x_{1}^{r}+x_{2}^{r}}{x_{1}^{t}+x_{2}^{t}}\right)^{\frac{1}{r-t}}
+                        \geq\left(\frac{x_{1}^{s}+x_{2}^{s}}{x_{1}^{t}+x_{2}^{t}}\right)^{\frac{1}{s-t}}\)
+                    </p>
+                    <p>
+                        Setting \(r=m+n-t\), which satisfies \(r \geq s \geq t\)
+                    </p>
+                    <p>
+                        Thus, it suffices to prove the inequality for \(m+n=s+t\)
+                    </p>
+                    <p>
+                        Since \(m \leq s\)
+                    </p>
+                    <p>
+                        setting \(\displaystyle f(q)=\frac{\ln \left(x_{1}^{q}+x_{2}^{q}\right)-\ln
+                        \left(x_{1}^{p-q}+x_{2}^{p-q}\right)}{q-(p-q)} \quad \left(\frac{p}{2} \leq
+                        q \leq p\right)\)
+                    </p>
+                    <p>
+                        \(\displaystyle
+                        f^{\prime}(q)=\frac{\left(\varphi^{\prime}(q)+\varphi^{\prime}(p-q)\right)(2
+                        q-p)-2(\varphi(q)-\varphi(p-q))}{(2 q-p)^{2}}\) &nbsp;&nbsp; (here and later
+                        \(\varphi^{\prime}(p-q)\) means \(\left.\varphi^{\prime}(r)\right|_{r=p-q}\)
+                        )
+                    </p>
+                    <p>
+                        Setting \(g(q)=\left(\varphi^{\prime}(q)+\varphi^{\prime}(p-q)\right)(2
+                        q-p)-2(\varphi(q)-\varphi(p-q))\)
+                    </p>
+                    <p>
+                        then \(g^{\prime}(q)=\left(\varphi^{\prime \prime}(q)-\varphi^{\prime
+                        \prime}(p-q)\right)(2 q-p)\)
+                    </p>
+                    <p>
+                        Setting \(h(q)=\varphi^{\prime \prime}(q)-\varphi^{\prime \prime}(p-q)\)
+                    </p>
+                    <p>
+                        then \(h^{\prime}(q)=\varphi^{\prime \prime \prime}(q)+\varphi^{\prime
+                        \prime \prime}(p-q) \leq 0\)
+                    </p>
+                    <p>
+                        So \(h(q) \leq h\left(\frac{p}{2}\right)=0\)
+                    </p>
+                    <p>
+                        and \(g(q) \leq g\left(\frac{p}{2}\right)=0\)
+                    </p>
+                    <p>
+                        we get \(f^{\prime}(q) \leq 0\), which means \(f(q)\) is decreasing when
+                        \(\frac{p}{2} \leq q \leq p\).
+                    </p>
+                    <p>
+                        Setting \(p=m+n\)
+                    </p>
+                    <p>
+                        since \(m \leq s, \frac{p}{2} \leq s \leq p, \frac{p}{2} \leq m \leq p\)
+                    </p>
+                    <p>
+                        we have \(f(m) \geq f(s)\)
+                    </p>
+                    <p>
+                        which gives us \(\displaystyle\frac{\ln \left(x_{1}^{m}+x_{2}^{m}\right)-\ln
+                        \left(x_{1}^{n}+x_{2}^{n}\right)}{m-n} \geq \frac{\ln
+                        \left(x_{1}^{s}+x_{2}^{s}\right)-\ln
+                        \left(x_{1}^{t}+x_{2}^{t}\right)}{s-t}\)
+                    </p>
+                    <p>
+                        Q. E. D.
+                    </p>
+
+                    <h2>Generation</h2>
+                    <p>
+                        Actually, this inequality cannot be generalized to the case of three or more variables.
+                    </p>
+                    <p>
+                        The simplest counterexample is as follows:
+                    </p>
+                    <p>
+                        \(x_1=2, x_2=2, x_3=3, m=2, n=1, s=3, t=0\)
+                    </p>
+                    <p>
+                        In this case \(\operatorname{LHS}=\frac{17}{7}\) and
+                        \(\operatorname{RHS}=(\frac{43}{3})^{\frac{1}{3}}\)
+                    </p>
+                    <p>
+                        so \(\operatorname{LHS}
+                        < \operatorname{RHS}\) </p> <br />
+                        <p>
+                            Additional, it seems that the inequality
+                            \[\left(\frac{n-1+t^p}{n-1+t}\right)^{\frac{1}{p-1}} <
+                                \left(\frac{n-1+t^{p+1}}{n}\right)^{\frac{1}{p+1}}\] </p> <p>
+                                holds if and only if \( 1 < t < (n-1)^{\frac{2}{p+1}}\) &nbsp;&nbsp; (here \( t>0 \)
+                                    and \(p>1\))
+                        </p>
+                        <h2>Background</h2>
+                        <p>
+                            I saw such an inequality in high school \( \displaystyle \frac{x^{2}+y^{2}}{x+y}
+                            \geq \sqrt[3]{\frac{x^{3}+y^{3 }}{2}} \quad(x, y>0)\)
+                        </p>
+                        <p>
+                            It was very difficult to prove, and I proved it by brute
+                            force approach.
+                        </p>
+                        <p>
+                            Then, I wondered why this 2-variable inequality is so tight, and whether
+                            it can be generalized.
+                        </p>
+                        <p>
+                            And I proposed a conjecture in the general case and proved it.
+                        </p>
+                        <p>
+                            Finally, I rewrited my proof in \(\LaTeX\) when I was studying at the
+                            university.
+                        </p>
+
+                </div>
+                <div id="footer-container">
+                    <div id="footer">
+                        <div id="footer-text">
+                            Submitted on March 6<sup>th</sup> 2022.<br />
+                            Last edited on March 6<sup>th</sup> 2022.<br />
+                            © Zixing Wang 2022. All rights reserved.<br />
+                            Powered by <a href="https://github.com/szl2/jemdoc-new-design" target="blank">jemdoc + new
+                                design</a>.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        function openNav() {
+            if (window.innerWidth <= 1200) {
+                document.getElementById("layout-menu").style.width = "280px";
+                document.getElementById("layout-content-container").style.marginLeft = "280.8px";
+                document.getElementById("layout-content-container").style.position = "fixed";
+            }
+        }
+
+        function closeNav() {
+            if (window.innerWidth <= 1200) {
+                document.getElementById("layout-menu").style.width = "0";
+                document.getElementById("layout-content-container").style.position = "static";
+                document.getElementById("layout-content-container").style.marginLeft = "0px";
+                setInterval(
+                    function () {
+                        location.reload()
+                    },
+                    500
+                );
+            }
+        }
+    </script>
+</body>
+
+</html>
